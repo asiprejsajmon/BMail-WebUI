@@ -7,7 +7,7 @@ from mailtm import Email
 
 app = Flask(__name__)
 
-# Folder for saving emails
+# Folder for saving emails /
 MAIL_FOLDER = os.path.join(os.getcwd(), 'mails')
 os.makedirs(MAIL_FOLDER, exist_ok=True)
 
