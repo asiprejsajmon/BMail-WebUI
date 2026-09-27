@@ -5,6 +5,9 @@ BMail WebUI is a one-file simple script that'll launch a Flask server with clean
 
 The website runs on a public ip on the 8080 port. (you can change all this in the script) If you wish the server would run on a local ip, just edit the main.py script so the ip is 172.0.0.1 at the bottom of the script. 
 
+The script provides a email savable function which saves received emails into a /emails file in your program root directory. This function can be toggled by a switch button on the website.
+
+
 Installation:
 
 git clone https://github.com/asiprejsajmon/BMail-WebUI.git
@@ -15,6 +18,4 @@ source .venv/bin/activate
 
 python3 -m pip install flask mailtm
 
-chmod +x start.sh && ./start 
-OR 
 python3 main.py
